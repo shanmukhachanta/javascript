@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter the name" class="names" onkeydown="
+    if(event.key === 'Enter'){
+        showup();
+    }    
+    ">
+    <button onclick="
+    showup();
+    ">submit</button>
+    <p class = "para"></p>
+
+    <script>
+        function showup(){
+            let peru = document.querySelector('.names').value;
+            document.querySelector('.para').innerHTML = peru;
+        }
+    </script>
+</body>
+</html>

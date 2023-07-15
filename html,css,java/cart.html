@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable exercise</title>
+</head>
+<body>
+    <p>Cart Quantity</p>
+    <button onclick="
+    console.log(`cartquantity : ${cartQuantity}`);
+    ">show Quantity
+    </button>
+
+    <button onclick="
+    cartQuantity=cartQuantity+1;
+    console.log(`cartquantity : ${cartQuantity}`);
+    " >
+        add to cart
+    </button>
+
+
+    <button onclick="
+    cartQuantity=cartQuantity+2;
+    console.log(`cartquantity : ${cartQuantity}`);
+    ">
+        +2
+    </button>
+    <button onclick="
+    cartQuantity=cartQuantity+3;
+    console.log(`cartquantity : ${cartQuantity}`);
+    ">+3</button>
+    <button onclick="
+    cartQuantity=0;
+    console.log(`cartquantity : ${cartQuantity}`);
+    ">Reset cart</button>
+
+    <script>
+        let cartQuantity = 0;
+
+        const name = "shanmukh";
+        console.log(`my name is ${name}`);
+    </script>
+</body>
+</html>
